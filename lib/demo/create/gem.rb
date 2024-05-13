@@ -4,9 +4,11 @@ require_relative "gem/version"
 
 module Demo
   module Create
+    # module test
     module Gem
-      class Error < StandardError; end
-      # Your code goes here...
+      def say_hello(name)
+        "Hello #{name}"
+      end
     end
   end
 end

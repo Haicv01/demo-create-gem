@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 RSpec.describe Demo::Create::Gem do
-  it "has a version number" do
-    expect(Demo::Create::Gem::VERSION).not_to be nil
-  end
+  include Demo::Create::Gem
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "say hello world" do
+    name = "world"
+    say_hello_world = say_hello(name)
+    expect(say_hello_world).to eq "Hello world"
   end
 end
