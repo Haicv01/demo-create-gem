@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "gem/version"
-require_relative "lib/demo/create/application_record"
+require_relative "application_record"
 
 module Master
   # Master::Zypcode
