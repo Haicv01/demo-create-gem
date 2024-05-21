@@ -2,6 +2,9 @@
 
 require "active_record"
 # ApplicationRecord
-class ApplicationRecord < ActiveRecord::Base
-  self.abstract_class = true
+module TestGem
+  # TestGem::ApplicationRecord
+  class ApplicationRecord < ActiveRecord::Base
+    self.abstract_class = true
+  end
 end
