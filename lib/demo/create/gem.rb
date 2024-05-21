@@ -2,13 +2,9 @@
 
 require_relative "gem/version"
 
-module Demo
-  module Create
-    # module test
-    module Gem
-      def say_hello(name)
-        "Hello #{name}"
-      end
-    end
+module Master
+  # Master::Zypcode
+  class Zypcode < ApplicationRecord
+    self.table_name = "master_zipcodes"
   end
 end
