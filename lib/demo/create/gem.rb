@@ -5,7 +5,7 @@ require_relative "application_record"
 
 module Master
   # Master::Zypcode
-  class Zipcode < TestGem::ApplicationRecord
+  class Zypcode < TestGem::ApplicationRecord
     self.table_name = "master_zipcodes"
     scope :last_record, -> { order(id: :desc).limit(1) }
   end
